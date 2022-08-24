@@ -1,10 +1,9 @@
 import React from "react";
 import {
   Route,
-  Routes,
   NavLink,
   BrowserRouter as Router,
-  Navigate
+  Redirect
 } from "react-router-dom";
 
 
@@ -26,14 +25,12 @@ const App = () =>  {
               <li><NavLink to = "/SubmitArticle">Submit an Article</NavLink></li>
           </ul>
         <div className="content">
-          <Routes>
           <Route exact path="/" component={Home}/>
           <Route  path="/SEPractice" component={SEPractice}/>
           <Route  path="/SubmitArticle" component={SubmitArticle}/>
-          <Route exact path="/404" element={<NotFoundPage/>}/>
-          <Route path="*" element={<Navigate to="/404" replace />}/>
+          <Route exact path="/404" component={NotFoundPage}/>
+            <Redirect to="/404" />
 
-          </Routes>
 
 
         </div>
