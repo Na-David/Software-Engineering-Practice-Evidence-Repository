@@ -1,6 +1,6 @@
 const tablecolumns = [
     {
-      Header: 'Title',
+      Header: 'Title', // Eslint needs to be installed
       accessor: 'title'
     }, {
       Header: 'Authors',

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Route,
-  NavLink,
-  BrowserRouter as Router,
-  Redirect
-} from "react-router-dom";
-
-
-
+import { Route,  NavLink,  BrowserRouter as Router,  Redirect } from "react-router-dom";
 
 import Home from "./pages/Home";
 import SEPractice from "./pages/SE-Practice";
@@ -30,13 +22,9 @@ const App = () =>  {
           <Route  path="/SubmitArticle" component={SubmitArticle}/>
           <Route exact path="/404" component={NotFoundPage}/>
             <Redirect to="/404" />
-
-
-
         </div>
       </div>
       </Router>
-
     );
 }
  

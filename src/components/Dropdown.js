@@ -10,10 +10,8 @@ import SEPractices from "../dummydata/SEPractices"
         <div>
              <select>
                 {optionItems}
-
              </select>
          </div>
-
     )
   }
   export default Dropdown;
